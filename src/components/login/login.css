@@ -1,0 +1,47 @@
+.auth{
+    padding: 12px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    line-height: 30px;
+}
+.auth-head{
+    margin-top: 15px;
+}
+.auth-body{
+    margin-top:13px;
+    display: block;
+}
+.auth-body > .auth-body-item {
+    margin-top:20px;
+}
+.btn-submit{
+    margin-top:20px;
+    width: 100%;
+}
+.check-box{
+    display: inline;
+}
+input .check-box{
+    width: 5px;
+}
+.input-item{
+    width:100%;
+    border:none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+.auth-bodyt-item.check{
+    margin-top:10px;
+}
+.auth-footer{
+    margin-top: 35px;
+}
+a{
+    text-decoration: none;
+}

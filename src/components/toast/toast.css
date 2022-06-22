@@ -1,0 +1,86 @@
+.notification-container {
+    font-size: 14px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999999;
+}
+
+.top-right {
+    top: 12px;
+    right: 12px;
+    transition: transform .6s ease-in-out;
+    animation: toast-in-right .7s;
+}
+
+
+.notification{
+    background-color: #fff;
+    width:340px;
+    transition: .3s ease;
+    pointer-events: auto;
+	overflow: hidden;
+    display: flex;
+    padding: 3px;
+    color: white;
+    border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 0 10px #999;
+    line-height: 1.5rem;
+    opacity: .9;
+    background-position: 15px;
+	background-repeat: no-repeat;
+    
+}
+.notification >div {
+    padding: 7px;
+}
+.notification:hover {
+	box-shadow: 0 0 12px #fff;
+	opacity: 1;
+	cursor: pointer
+}
+.notification-image {
+    float: left;
+    margin-right: 15px;
+}
+.notification-image img {
+    width: 30px;
+    height: 30px;
+}
+
+.notification-title{
+    font-weight: 800;
+}
+
+.notification button{
+    position: relative;
+    top:-1.3rem;
+    right: -1.3rem;
+    font-weight: 800;
+    float: right;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .8;
+    cursor:  pointer;
+    padding: 0 ;
+    background: 0 0;
+}
+.notification ~ .notification {
+    margin-top: 12px;
+}
+@media only screen and (max-width: 600px) {
+    .notification{
+        width: 300px; 
+    }
+}
+
+@keyframes toast-in-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
